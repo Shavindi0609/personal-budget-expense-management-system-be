@@ -29,7 +29,7 @@ export const analyzeExpenses = async (req: Request, res: Response) => {
       }
     );
 
-    // The shape of response.data depends on the API — adapt as needed
+    // The shape of response.data depends on the API — adapt as need
     return res.json({ result: response.data });
   } catch (err: any) {
     console.error(err.response?.data || err.message);
